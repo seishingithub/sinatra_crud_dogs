@@ -2,5 +2,5 @@
 <a href="/dogs/new">Add Dog</a>
 
 <% dogs.each do |dog| %><br>
-<%= dog[:name] %><br>
+<a href="/dogs/<%= dog[:id] %>"><%= dog[:name] %></a><br>
 <% end %>
